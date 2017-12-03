@@ -518,6 +518,7 @@ menu_keymap() {
 
 set_keymap() {
     local KEYMAP=$(get_option KEYMAP)
+    tee $TARGETDIR/etc/vconsole.conf
     sed -i -e "s|KEYMAP=.*|KEYMAP=$KEYMAP|g" $TARGETDIR/etc/vconsole.conf
 }
 
@@ -1148,7 +1149,7 @@ install_packages() {
 }
 
 enable_dhcpd() {
-    ln -sf $TARGETDIR/etc/systemd/system/multi-user.target.wants/dhcpcd.service /usr/lib/systemd/system/dhcpcd.service
+    ln -sf $TARGETDIR/etc/systemd/system/multi-user.target.wants/dhcpcd.service $TARGETDIR/usr/lib/systemd/system/dhcpcd.service
 }
 
 menu_install() {
