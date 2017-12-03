@@ -1192,7 +1192,7 @@ ${BOLD}Do you want to continue?${RESET}" 20 80 || return
 
     # Create and mount filesystems
     create_filesystems
-        mount_filesystems
+        #mount_filesystems
         install_packages
 
     INFOBOX "Applying installer settings..." 4 60
