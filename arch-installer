@@ -518,7 +518,7 @@ menu_keymap() {
 
 set_keymap() {
     local KEYMAP=$(get_option KEYMAP)
-    tee $TARGETDIR/etc/vconsole.conf
+    touch $TARGETDIR/etc/vconsole.conf
     sed -i -e "s|KEYMAP=.*|KEYMAP=$KEYMAP|g" $TARGETDIR/etc/vconsole.conf
 }
 
