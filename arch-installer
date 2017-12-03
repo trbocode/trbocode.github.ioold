@@ -527,7 +527,7 @@ set_keymap() {
 }
 
 menu_locale() {
-    local _locales="$(grep -E '\.UTF-8' /etc/default/libc-locales|awk '{print $1}'|sed -e 's/^#//')"
+    local _locales="$(grep -E '\.UTF-8' /etc/locale.gen|awk '{print $1}'|sed -e 's/^#//')"
     local LOCALES ISO639 ISO3166
     local TMPFILE=$(mktemp -t vinstall-XXXXXXXX || exit 1)
     INFOBOX "Scanning locales ..." 4 60
@@ -793,7 +793,7 @@ set_bootloader() {
 }
 
 test_network() {
-	return 1
+	return 0
 }
 
 configure_wifi() {
