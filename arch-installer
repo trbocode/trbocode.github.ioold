@@ -585,7 +585,7 @@ menu_timezone() {
 set_timezone() {
     local TIMEZONE="$(get_option TIMEZONE)"
 
-    sed -i -e "s|#TIMEZONE=.*|TIMEZONE=$TIMEZONE|g" $TARGETDIR/etc/rc.conf
+    sed -i -e "s|#TIMEZONE=.*|TIMEZONE=$TIMEZONE|g" $TARGETDIR/etc/localtime
 }
 
 menu_hostname() {
@@ -1151,7 +1151,7 @@ install_packages() {
 }
 
 enable_dhcpd() {
-    systemctl enable dhcpcd
+    ln -sf $TARGETDIR/etc/systemd/system/multi-user.target.wants/dhcpcd.service /usr/lib/systemd/system/dhcpcd.service
 }
 
 menu_install() {
@@ -1217,7 +1217,7 @@ ${BOLD}Do you want to continue?${RESET}" 20 80 || return
         elif [ "$_type" = "dhcp" ]; then
             if [ -f /etc/wpa_supplicant/wpa_supplicant-${_dev}.conf ]; then
                 cp /etc/wpa_supplicant/wpa_supplicant-${_dev}.conf $TARGETDIR/etc/wpa_supplicant
-                systemctl enable dhcpcd
+                    ln -sf /etc/systemd/system/multi-user.target.wants/dhcpcd-${_dev}.service $TARGETDIR/usr/lib/systemd/system/dhcpcd-${_dev}.service
             else
                 enable_dhcpd
             fi
