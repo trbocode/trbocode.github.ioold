@@ -553,7 +553,7 @@ menu_locale() {
 }
 
 set_locale() {
-    if [ -f $TARGETDIR/etc/default/libc-locales ]; then
+    if [ -f $TARGETDIR/etc/locale.conf ]; then
         local LOCALE=$(get_option LOCALE)
         sed -i -e "s|LANG=.*|LANG=$LOCALE|g" $TARGETDIR/etc/locale.conf
         # Uncomment locale from /etc/default/libc-locales and regenerate it.
