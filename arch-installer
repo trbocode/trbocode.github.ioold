@@ -793,7 +793,8 @@ set_bootloader() {
 }
 
 test_network() {
-	return 0
+    NETWORK_DONE=1
+	return 1
 }
 
 configure_wifi() {
@@ -1133,19 +1134,10 @@ copy_rootfs() {
 }
 
 install_packages() {
-    local _grub= _syspkg=
+    local _syspkg=
 
-    if [ -n "$EFI_SYSTEM" ]; then
-        if [ $EFI_FW_BITS -eq 32 ]; then
-            _grub="grub-i386-efi"
-        else
-            _grub="grub-x86_64-efi"
-        fi
-    else
-        _grub="grub"
-    fi
 
-    _syspkg="base"
+    _syspkg="base grub"
 
     mkdir -p $TARGETDIR/boot/grub
 
@@ -1159,7 +1151,7 @@ install_packages() {
 }
 
 enable_dhcpd() {
-    ln -sf /etc/sv/dhcpcd $TARGETDIR/etc/runit/runsvdir/default/dhcpcd
+    systemctl enable dhcpcd
 }
 
 menu_install() {
@@ -1225,7 +1217,7 @@ ${BOLD}Do you want to continue?${RESET}" 20 80 || return
         elif [ "$_type" = "dhcp" ]; then
             if [ -f /etc/wpa_supplicant/wpa_supplicant-${_dev}.conf ]; then
                 cp /etc/wpa_supplicant/wpa_supplicant-${_dev}.conf $TARGETDIR/etc/wpa_supplicant
-                ln -sf /etc/sv/dhcpcd-${_dev} $TARGETDIR/etc/runit/runsvdir/default/dhcpcd-${_dev}
+                systemctl enable dhcpcd
             else
                 enable_dhcpd
             fi
