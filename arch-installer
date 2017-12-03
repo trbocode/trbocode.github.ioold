@@ -1149,7 +1149,7 @@ install_packages() {
 }
 
 enable_dhcpd() {
-    ln -sf $TARGETDIR/etc/systemd/system/multi-user.target.wants/dhcpcd.service $TARGETDIR/usr/lib/systemd/system/dhcpcd.service
+	chroot $TARGETDIR systemctl enable dhcpcd
 }
 
 menu_install() {
@@ -1215,7 +1215,7 @@ ${BOLD}Do you want to continue?${RESET}" 20 80 || return
         elif [ "$_type" = "dhcp" ]; then
             if [ -f /etc/wpa_supplicant/wpa_supplicant-${_dev}.conf ]; then
                 cp /etc/wpa_supplicant/wpa_supplicant-${_dev}.conf $TARGETDIR/etc/wpa_supplicant
-                    ln -sf /etc/systemd/system/multi-user.target.wants/dhcpcd-${_dev}.service $TARGETDIR/usr/lib/systemd/system/dhcpcd-${_dev}.service
+                    chroot $TARGETDIR systemctl enable dhcpcd@${_dev}
             else
                 enable_dhcpd
             fi
