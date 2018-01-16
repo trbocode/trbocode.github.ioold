@@ -19,7 +19,8 @@ echo 'a' > /mnt/etc/hostname
 arch-chroot /mnt systemctl enable dhcpcd
 arch-chroot /mnt systemctl enable lxdm
 arch-chroot /mnt sed -i 's,# %wheel ALL=(ALL) ALL,%wheel ALL=(ALL) ALL,g' /etc/sudoers 
-#echo -e 'cd /home/vm && sudo -u vm git clone https://aur.archlinux.org/trizen.git && cd trizen && sudo -u vm makepkg -Sr' > b
-#mv b /mnt
-#arch-chroot /mnt sh b
+echo -e 'cd /home/vm && sudo -u vm git clone https://aur.archlinux.org/trizen.git && cd trizen && sudo -u vm makepkg -sci && cd /home/vm && rm -rf trizen' > b
+mv b /mnt
+arch-chroot /mnt sh b
+rm /mnt/b
 reboot
