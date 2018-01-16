@@ -9,18 +9,17 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt grub-install --target=i386-pc /dev/sda 
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg 
 arch-chroot /mnt ln -sf /usr/share/zoneinfo/Asia/Jerusalem /etc/localtime 
-arch-chroot /mnt hwclock --systohc 
+arch-chroot /mnt hwclock --systohc
+arch-chroot /mnt useradd -m -G wheel,video,audio vm
 arch-chroot /mnt sed -i 's,#en_US.UTF-8,en_US.UTF-8,g' /etc/locale.gen 
 arch-chroot /mnt locale-gen
 echo 'LANG=en_US.UTF-8' > /mnt/etc/locale.conf
-arch-chroot /mnt useradd -m -G wheel,video,audio vm
-arch-chroot /mnt echo -e 'a\na' | passwd vm
 echo 'a' > /mnt/etc/hostname
+arch-chroot /mnt echo -e 'a\na' | passwd vm
 arch-chroot /mnt systemctl enable dhcpcd
 arch-chroot /mnt systemctl enable lxdm
 arch-chroot /mnt sed -i 's,# %wheel ALL=(ALL) ALL,%wheel ALL=(ALL) ALL,g' /etc/sudoers 
-arch-chroot /mnt git clone https://aur.archlinux.org/trizen.git
-cd /mnt/trizen
-makepkg -Sr
-arch-chroot /mnt pacman -U /trizen/trizen.tar.gz
+echo -e 'cd /home/vm && git clone https://aur.archlinux.org/trizen.git && cd trizen && sudo -u vm makepkg -Sr' > b
+mv b /mnt
+arch-chroot /mnt b
 reboot
