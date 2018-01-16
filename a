@@ -3,18 +3,20 @@ timedatectl set-ntp true
 echo -e "n\np\n\n\n\nw" | fdisk /dev/sda
 mkfs.ext4 /dev/sda1
 mount /dev/sda1 /mnt
-sed -e 's,arch.mirror.constant.com,mirror.isoc.org.il/pub,g' /etc/pacman.d/mirrorlist
-pacstrap /mnt base sudo grub linux-headers xorg-server xorg-apps xorg-fonts-100dpi lxde virtualbox-guest-utils
+sed -i 's,arch.mirror.constant.com,mirror.isoc.org.il/pub,g' /etc/pacman.d/mirrorlist
+pacstrap /mnt base sudo grub bash-completion linux-headers xorg-server xorg-apps xorg-fonts-100dpi xorg-fonts-75dpi lxde virtualbox-guest-utils
 genfstab -U /mnt >> /mnt/etc/fstab  
 arch-chroot /mnt grub-install --target=i386-pc /dev/sda 
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg 
 arch-chroot /mnt ln -sf /usr/share/zoneinfo/Asia/Jerusalem /etc/localtime 
 arch-chroot /mnt hwclock --systohc 
-arch-chroot /mnt sed -e 's,#en_US.UTF-8,en_US.UTF-8,g' /etc/locale.gen 
+arch-chroot /mnt sed -i 's,#en_US.UTF-8,en_US.UTF-8,g' /etc/locale.gen 
 arch-chroot /mnt locale-gen
+arch-chroot /mnt echo 'LANG=en_US.UTF-8' | tee /etc/locale.conf
 arch-chroot /mnt useradd -m -G wheel,video,audio vm
+arch-chroot /mnt echo 'a' | passwd vm --stdin
 arch-chroot /mnt echo 'a' | tee /etc/hostname
 arch-chroot /mnt systemctl enable dhcpcd
 arch-chroot /mnt systemctl enable lxdm
-echo '%wheel ALL=(ALL) ALL' | sudo EDITOR='tee -a' visudo
+arch-chroot /mnt echo '%wheel ALL=(ALL) ALL' | sudo EDITOR='tee -a' visudo
 reboot
