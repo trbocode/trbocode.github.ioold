@@ -15,11 +15,10 @@ arch-chroot /mnt sed -i 's,#en_US.UTF-8,en_US.UTF-8,g' /etc/locale.gen
 arch-chroot /mnt locale-gen
 echo 'LANG=en_US.UTF-8' > /mnt/etc/locale.conf
 echo 'a' > /mnt/etc/hostname
-arch-chroot /mnt echo -e 'a\na' | passwd vm
 arch-chroot /mnt systemctl enable dhcpcd
 arch-chroot /mnt systemctl enable lxdm
 arch-chroot /mnt sed -i 's,# %wheel ALL=(ALL) ALL,%wheel ALL=(ALL) ALL,g' /etc/sudoers 
-echo -e 'cd /home/vm && git clone https://aur.archlinux.org/trizen.git && cd trizen && sudo -u vm makepkg -Sr' > b
+echo -e 'echo -e 'a\na' | passwd vm cd /home/vm && sudo -u vm git clone https://aur.archlinux.org/trizen.git && cd trizen && sudo -u vm makepkg -Sr' > b
 mv b /mnt
-arch-chroot /mnt b
+arch-chroot /mnt sh b
 reboot
