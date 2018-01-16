@@ -10,7 +10,7 @@ arch-chroot /mnt grub-install --target=i386-pc /deb/sda
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg 
 arch-chroot /mnt ln -sf /usr/share/zoneinfo/Asia/Jerusalem /etc/localtime 
 arch-chroot /mnt hwclock --systohc 
-arch-chroot /mnt sed -e 's,#en_US.UTF-8,en_US.UTF-8,g' /etc/locale.gen/mirrorlist 
+arch-chroot /mnt sed -e 's,#en_US.UTF-8,en_US.UTF-8,g' /etc/locale.gen 
 arch-chroot /mnt locale-gen
 arch-chroot /mnt useradd -m -G wheel,video,audio vm
 arch-chroot /mnt echo 'a' | tee /etc/hostname
