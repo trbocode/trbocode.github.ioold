@@ -4,7 +4,7 @@ echo -e "n\np\n\n\n\nw" | fdisk /dev/sda
 mkfs.ext4 /dev/sda1
 mount /dev/sda1 /mnt
 sed -i 's,arch.mirror.constant.com,mirror.isoc.org.il/pub/archlinux,g' /etc/pacman.d/mirrorlist
-pacstrap /mnt base git grub bash-completion linux-headers xorg-fonts-100dpi xorg-server xorg-apps lxde ttf-dejavu virtualbox-guest-utils
+pacstrap /mnt base grub sudo bash-completion linux-headers xorg-fonts-100dpi xorg-server xorg-apps lxde ttf-dejavu virtualbox-guest-utils
 genfstab -U /mnt >> /mnt/etc/fstab  
 arch-chroot /mnt grub-install --target=i386-pc /dev/sda 
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg 
@@ -19,8 +19,8 @@ echo 'a' > /mnt/etc/hostname
 arch-chroot /mnt systemctl enable dhcpcd
 arch-chroot /mnt systemctl enable lxdm
 arch-chroot /mnt sed -i 's,# %wheel ALL=(ALL) ALL,%wheel ALL=(ALL) ALL,g' /etc/sudoers 
-echo -e 'cd /home/vm && sudo -u vm git clone https://aur.archlinux.org/trizen.git && cd trizen && sudo -u vm makepkg -sci && cd /home/vm && rm -rf trizen' > b
-mv b /mnt
-arch-chroot /mnt sh b
-rm /mnt/b
+#echo -e 'pacman -S --noconfirm base-devel git && cd /home/vm && sudo -u vm git clone https://aur.archlinux.org/trizen.git && cd trizen && sudo -u vm makepkg -sci && cd /home/vm && rm -rf trizen' > b
+#mv b /mnt
+#arch-chroot /mnt sh b
+#rm /mnt/b
 reboot
