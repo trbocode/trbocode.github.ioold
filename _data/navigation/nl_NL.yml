@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: Home
+    url: /
+  - 
+    title: Veelgestelde vragen (FAQ)
+    url: faq
+  - 
+    title: Donaties
+    url: donations
+  - 
+    title: Credits
+    url: credits
+  - 
+    title: Probleemoplossing
+    url: troubleshooting
+  - 
+    title: Homebrew Ontwikkeling
+    url: homebrew-development
+  - 
+    title: Site Navigatie
+    url: site-navigation
+bottom:
+  - 
+    title: For support in English, ask for help at <a href="https://discord.gg/DThbZ7z">ReSwitched on Discord</a>.
+  - 
+    title: Als je deze handleiding waardeert, accepteer ik <a href="donations">donaties</a>.
+footer:
+  - 
+    title: Broncode
+  - 
+    title: Site Navigatie
+  - 
+    title: Waarom Advertenties?
+sidebar_title:
+  - 
+    title: Algemene vooruitgang
+sidebar_pages:
+  - 
+    title: Home
+    url: /
+  - 
+    title: Voorbereiding
+    url: get-started
+  - 
+    title: Updates Blokkeren
+    url: blocking-updates
+  - 
+    title: Gamekaart Update
+    url: game-card-update
+  - 
+    title: Homebrew Launcher (PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: Homebrew Launcher (Installer)
+    url: homebrew-launcher-(installer)
+  - 
+    title: Meerdere mogelijkheden
+    url: multiple-options

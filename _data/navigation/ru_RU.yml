@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: Главная
+    url: /
+  - 
+    title: Вопросы и ответы
+    url: faq
+  - 
+    title: Пожертвования
+    url: donations
+  - 
+    title: Благодарности
+    url: credits
+  - 
+    title: Проблемы и их решения
+    url: troubleshooting
+  - 
+    title: Разработка хоумбрю
+    url: homebrew-development
+  - 
+    title: Навигация по сайту
+    url: site-navigation
+bottom:
+  - 
+    title: Для поддержки на английском языке обратитесь за помощью на сервер <a href="https://discord.gg/DThbZ7z">ReSwitched в Discord</a>.
+  - 
+    title: Если вам помогло или просто понравилось это руководство, то я принимаю <a href="donations">пожертвования</a>.
+footer:
+  - 
+    title: Исходный код
+  - 
+    title: Навигация по сайту
+  - 
+    title: Зачем реклама?
+sidebar_title:
+  - 
+    title: Общий прогресс
+sidebar_pages:
+  - 
+    title: Главная
+    url: /
+  - 
+    title: Начало
+    url: get-started
+  - 
+    title: Блокировка обновлений
+    url: blocking-updates
+  - 
+    title: Обновление картриджем
+    url: game-card-update
+  - 
+    title: Homebrew Launcher (PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: Homebrew Launcher (Installer)
+    url: homebrew-launcher-(installer)
+  - 
+    title: Несколько вариантов
+    url: multiple-options

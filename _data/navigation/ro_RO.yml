@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: Acasă
+    url: /
+  - 
+    title: Întrebări frecvente
+    url: faq
+  - 
+    title: Donații
+    url: donations
+  - 
+    title: Contribuţii
+    url: credits
+  - 
+    title: Depanare
+    url: troubleshooting
+  - 
+    title: Dezvoltarea homebrew-ului
+    url: homebrew-development
+  - 
+    title: Navigarea pe site
+    url: site-navigation
+bottom:
+  - 
+    title: For support in English, ask for help at <a href="https://discord.gg/DThbZ7z">ReSwitched on Discord</a>.
+  - 
+    title: Dacă apreciați acest ghid, accept <a href="donations">Donații</a>.
+footer:
+  - 
+    title: Codul sursă
+  - 
+    title: Navigarea pe site
+  - 
+    title: De ce sunt reclame?
+sidebar_title:
+  - 
+    title: Progres total
+sidebar_pages:
+  - 
+    title: Acasă
+    url: /
+  - 
+    title: Începeți
+    url: get-started
+  - 
+    title: Blocarea actualizărilor
+    url: blocking-updates
+  - 
+    title: Actualizare cu card de joc
+    url: game-card-update
+  - 
+    title: Homebrew Launcher (PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: Homebrew Launcher (Installer)
+    url: homebrew-launcher-(installer)
+  - 
+    title: Multiple Options
+    url: multiple-options

@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: Inicio
+    url: /
+  - 
+    title: FAQ
+    url: faq
+  - 
+    title: Donaciones
+    url: donations
+  - 
+    title: Créditos
+    url: credits
+  - 
+    title: Solución de problemas
+    url: troubleshooting
+  - 
+    title: Desarrollo de Homebrew
+    url: homebrew-development
+  - 
+    title: Navegación del sitio
+    url: site-navigation
+bottom:
+  - 
+    title: Para soporte en inglés, pide ayuda en el <a href="https://discord.gg/DThbZ7z">Discord de ReSwitched</a>.
+  - 
+    title: Si aprecias esta guía, acepto <a href="donations">donaciones</a>.
+footer:
+  - 
+    title: Código fuente
+  - 
+    title: Navegación del sitio
+  - 
+    title: '¿Por qué anuncios?'
+sidebar_title:
+  - 
+    title: Progreso total
+sidebar_pages:
+  - 
+    title: Inicio
+    url: /
+  - 
+    title: Comencemos
+    url: get-started
+  - 
+    title: Bloqueo de actualizaciones
+    url: blocking-updates
+  - 
+    title: Actualización con cartucho
+    url: game-card-update
+  - 
+    title: Homebrew Launcher (PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: Homebrew Launcher (instalador)
+    url: homebrew-launcher-(installer)
+  - 
+    title: Múltiples opciones
+    url: multiple-options

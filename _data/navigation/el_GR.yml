@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: Αρχική
+    url: /
+  - 
+    title: Συχνές Ερωτήσεις
+    url: faq
+  - 
+    title: Δωρεές
+    url: donations
+  - 
+    title: Συντελεστές
+    url: credits
+  - 
+    title: Αντιμετώπιση Προβλημάτων
+    url: troubleshooting
+  - 
+    title: Ανάπτυξη για Homebrew
+    url: homebrew-development
+  - 
+    title: Πλοήγηση Iστοτόπου
+    url: site-navigation
+bottom:
+  - 
+    title: For support in English, ask for help at <a href="https://discord.gg/DThbZ7z">ReSwitched on Discord</a>.
+  - 
+    title: Εάν σας βοηθήσε αυτός ο οδηγός, μπορείτε να κάνετε μια <a href="donations">Δωρεά</a>.
+footer:
+  - 
+    title: Κώδικας
+  - 
+    title: Πλοήγηση Iστοτόπου
+  - 
+    title: Γιατί βλέπω διαφημίσεις;
+sidebar_title:
+  - 
+    title: Συνολική πρόοδος
+sidebar_pages:
+  - 
+    title: Αρχική
+    url: /
+  - 
+    title: Ας αρχίσουμε
+    url: get-started
+  - 
+    title: Αποκλεισμός ενημερώσεων
+    url: blocking-updates
+  - 
+    title: Ενημέρωση μέσω Kασέτας Παιχνιδιού
+    url: game-card-update
+  - 
+    title: Homebrew Launcher (PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: Homebrew Launcher (Installer)
+    url: homebrew-launcher-(installer)
+  - 
+    title: Multiple Options
+    url: multiple-options

@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: الصفحة الرئيسية
+    url: /
+  - 
+    title: الأسئلة الشائعة
+    url: faq
+  - 
+    title: التبرعات
+    url: donations
+  - 
+    title: الشكر والتقدير
+    url: credits
+  - 
+    title: استكشاف الأخطاء وإصلاحها
+    url: troubleshooting
+  - 
+    title: تطوير الـ Homebrew
+    url: homebrew-development
+  - 
+    title: التنقل في الموقع
+    url: site-navigation
+bottom:
+  - 
+    title: للدعم باللغة الإنجليزية، أطلب المساعدة في <a href="https://discord.gg/DThbZ7z"> ReSwitched على موقع Discord</a>.
+  - 
+    title: إذا أعجبك الشرح، أنا أقبل التبرعات <a href="donations">التبرعات</a>.
+footer:
+  - 
+    title: المصدر
+  - 
+    title: التنقل في الموقع
+  - 
+    title: لماذا الإعلانات؟
+sidebar_title:
+  - 
+    title: التقدم العام
+sidebar_pages:
+  - 
+    title: الصفحة الرئيسية
+    url: /
+  - 
+    title: أبدأ
+    url: get-started
+  - 
+    title: منع التحديثات
+    url: blocking-updates
+  - 
+    title: التحديث باستخدام بطاقة لعبة
+    url: game-card-update
+  - 
+    title: مشغل الـHomebrew (PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: مشغل الـHomebrew (المثبت)
+    url: homebrew-launcher-(installer)
+  - 
+    title: خيارات متعددة
+    url: multiple-options

@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: 首頁
+    url: /
+  - 
+    title: 常見問題 FAQ
+    url: faq
+  - 
+    title: 贊助
+    url: donations
+  - 
+    title: 製作群
+    url: credits
+  - 
+    title: 疑難排解
+    url: troubleshooting
+  - 
+    title: 開發自製軟體
+    url: homebrew-development
+  - 
+    title: 網站導覽
+    url: site-navigation
+bottom:
+  - 
+    title: 若需英語支援，請於 <a href="https://discord.gg/DThbZ7z">Discord 上的 ReSwitched 伺服器</a>發問。
+  - 
+    title: 如果你喜歡本教學，我很樂意接受<a href="donations">捐贈</a>。
+footer:
+  - 
+    title: 本站原始碼
+  - 
+    title: 網站導覽
+  - 
+    title: 為什麼會有廣告?
+sidebar_title:
+  - 
+    title: 整體進度
+sidebar_pages:
+  - 
+    title: 首頁
+    url: /
+  - 
+    title: 新手入門
+    url: get-started
+  - 
+    title: 阻擋更新
+    url: blocking-updates
+  - 
+    title: 透過遊戲卡帶更新
+    url: game-card-update
+  - 
+    title: Homebrew Launcher (透過 PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: Homebrew Launcher (透過安裝程式)
+    url: homebrew-launcher-(installer)
+  - 
+    title: 多項選擇
+    url: multiple-options

@@ -1,0 +1,60 @@
+---
+main:
+  - 
+    title: Beranda
+    url: /
+  - 
+    title: FAQ
+    url: faq
+  - 
+    title: Donasi
+    url: donations
+  - 
+    title: Kredit
+    url: credits
+  - 
+    title: Penyelesaian Masalah
+    url: troubleshooting
+  - 
+    title: Homebrew Development
+    url: homebrew-development
+  - 
+    title: Navigasi Situs
+    url: site-navigation
+bottom:
+  - 
+    title: For support in English, ask for help at <a href="https://discord.gg/DThbZ7z">ReSwitched on Discord</a>.
+  - 
+    title: Jika Anda menghargai panduan ini, saya menerimanya <a href="donations">Donasi</a>.
+footer:
+  - 
+    title: Sumber
+  - 
+    title: Navigasi Situs
+  - 
+    title: Mengapa Iklan?
+sidebar_title:
+  - 
+    title: Kemajuan secara keseluruhan
+sidebar_pages:
+  - 
+    title: Beranda
+    url: /
+  - 
+    title: Memulai
+    url: get-started
+  - 
+    title: Memblokir Pembaruan
+    url: blocking-updates
+  - 
+    title: Pembaharuan Permainan Kartu
+    url: game-card-update
+  - 
+    title: Homebrew Launcher (PegaSwitch)
+    url: homebrew-launcher-(pegaswitch)
+  - 
+    title: Homebrew Launcher (Installer)
+    url: homebrew-launcher-(installer)
+  - 
+    title: Multiple Options
+    url: multiple-options
