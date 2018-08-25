@@ -1,0 +1,65 @@
+---
+layout: splash
+title: "Switch Hacks Guide" #
+header:
+  overlay_color: "#5e616c" #
+  overlay_image: images/home-page-feature.jpg
+  overlay_filter: 0.5
+  caption:
+
+excerpt: "A complete guide to Switch homebrew <br /> and homebrew development.<br />"
+---
+
+For complete guides to homebrew and custom firmware for other devices, check out [Hacks.Guide](https://hacks.guide).
+{: .notice--primary}
+
+___
+
+Thoroughly read all of the introductory pages (including this one!) before proceeding.
+{: .notice--warning}
+
+{% capture notice-1 %}
+This guide is available in other languages!
+Click the <i class="fa fa-language" aria-hidden="true"></i> icon at the top right of the page to change the language.    
+Alternatively, click [here](https://crowdin.com/project/switch-guide) to help to keep these translations up to date.
+{% endcapture %}
+
+<div class="notice--success">{{ notice-1 | markdownify }}</div>
+
+## What is Homebrew?
+
+[**Homebrew**](https://en.wikipedia.org/wiki/List_of_homebrew_video_games) usually refers to software that is not authorized by Nintendo. This includes homebrew tools, applications, games, and emulators.
+
+If your device was bought before July 2018, running Homebrew is nearly 100% free using just a USB cable and a method to enter RCM.
+
+
+## What is Custom Firmware?
+
+**Custom Firmware** ("CFW") enables you to use more advanced hacks that userland homebrew can't easily do. It is currently in development, however a late beta version is used in this guide. For more details, see [FAQ: Fusée Gelée](http://www.ktemkin.com/faq-fusee-gelee/).
+
+Additionally, it is possible that devices on firmware version 1.0.0 may see an RCM-Jig less solution due to a software-only vulnerability which is not present on later firmware versions.
+
+If your device is on firmware version 1.0.0 and you are interested CFW access without an RCM jig, your best current option is to follow this guide and wait patiently for a CFW release.
+{: .notice--info}
+
+If your device was bought later than July 2018, it might still be vurnable. If you discover it isn't able to launch CFW, your best current option is to follow this guide's [Blocking Updates](blocking-updates) page and wait patiently for a CFW release.
+{: .notice--info}
+
+## What does this guide install?
+
+This guide currently enables access to CFW via a bootrom exploit.  
+
+If you are familiar with iOS device "jailbreaking", this idea could be considered analagous to a "tTethered jailbreak", or a "Semi-untethered jailbreak" - You may choose either.
+
+## What do I need to know before starting?
+
++ While Switch hacks are constantly progressing, they are not yet in a very user-friendly state. As such, this guide may require some technical understanding in order to troubleshoot any issues which may come up.
++ The scope of device modification is limited for most current homebrew, meaning there is little chance of data loss or console damage when using popular homebrew applications.
++ This guide will work on all Switch devices bought before July 2018, with all other versions having planned future support for CFW. Instructions are included for blocking updates on new devices.
++ You will need a micro SD card for your device. It should be formatted as FAT32 and [MBR, not GPT](http://www.howtogeek.com/245610/) (most micro SD cards will be formatted this way by default). 
++ If your Switch won't read your larger than 32GB micro SD card without a System Update, you can use [guiformat](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm) on Windows to format it as FAT32 with an Allocation Unit Size of 32K (32768). After finishing this guide, you may reformat your SD card to exfat in order to support files larger than 4GB.
+
+___
+
+### Continue to [Get Started](get-started)
+{: .notice--primary}

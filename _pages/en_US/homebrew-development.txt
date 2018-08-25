@@ -1,0 +1,41 @@
+---
+title: "Homebrew Development"
+---
+
+{% include toc title="Table of Contents" %}
+
+### Required Reading
+
+Currently, the major public exploitation toolkit used for the Switch is PegaSwitch, developed by ReSwitched.
+
+If you are interested in collaborating with ReSwitched members on Homebrew Development, check out [ReSwitched on Discord](https://discord.gg/DThbZ7z).
+{: .notice--success}
+
+If you are interested in collaborating with SwitchBrew members on Homebrew Development, check out #switchdev on EFnet.
+{: .notice--success}
+
+### Libraries
+
+Currently, there are two major libraries used for developing Switch homebrew.
+
+___
+
+#### Development (libnx)
+
+The libnx library is developed by SwitchBrew and built on the devkitA64 toolchain.
+
+Binaries can be run on your device using the Homebrew Launcher.
+
+Continue to [Setting up Development Environment](http://switchbrew.org/index.php?title=Setting_up_Development_Environment) on SwitchBrew
+{: .notice--primary}
+
+___
+
+#### Development (libtransistor)
+
+The libtransistor library is developed by ReSwitched and built on the LLVM / Clang stack.
+
+Binaries can be run on your PC using the Mephisto emulator, or on your device using either the Homebrew Launcher or ACE Loader.
+
+Continue to [Development (libtransistor)](https://reswitchedweekly.github.io/Development-Setup/) on Reswitched Weekly
+{: .notice--primary}

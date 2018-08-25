@@ -1,0 +1,34 @@
+---
+title: "Blocking Nintendo"
+---
+
+{% include toc title="Table of Contents" %}
+
+### Required Reading
+
+In order to guarantee not being banned, we set your current network's DNS to a server which blocks requests to Nintendo's Switch server.
+
+### Instructions
+
+#### Section I - DNS Configuration
+
+Note that these DNS servers will need to be set on each network you connect your device to for it to block updates!
+{: .notice--warning}
+
+1. Launch System Settings
+1. Navigate to `Internet` -> `Internet Settings`
+1. Select your current network
+  + This is signified by a green check mark next to the network
+  + If there is no Network than connect to one
+1. Select "Change Settings"
+1. Set "DNS Settings" to "Manual"
+1. Set "Primary DNS" to `163.172.141.219`
+1. Set "Secondary DNS" to `45.248.48.62`
+1. Save the network settings
+1. Exit System Settings
+
+
+___
+
+Updates are now blocked on your device for the configured network.
+{: .notice--success}
