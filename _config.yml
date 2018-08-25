@@ -13,10 +13,10 @@ title                    : "Switch Hacks Guide"
 title_separator          : "-"
 name                     : "Plailect"
 description              : "Full Homebrew Guide"
-url                      : "https://switch.hacks.guide" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-enforce_ssl              : "switch.hacks.guide"
+url                      : "https://trbocode.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+enforce_ssl              : "trbocode.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "Plailect/Guide_Switch" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "trbocode/trbocode.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
