@@ -9,7 +9,7 @@ title: "Setting up (Fusee-Gelee)"
 * The latest version of [SDFilesSwitch](https://github.com/tumGER/SDFilesSwitch/releases\latest)
 * The latest version of [Tinfoil](https://bsnx.lavatech.top/tinfoil/)
 * The latest version of [ChoiDujourNX](https://switchtools.sshnuke.net/)
-* The latest version of [Fusee-Launcher] (https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py)
+* The latest version of [Fusee-Launcher](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py)
     + In order to download this, right click on the link and select "Save Link As"
 * Pyhon 3 and pyusb installed on your computer - Install using your package manager
 * The latest Switch firmware
@@ -60,7 +60,7 @@ If you installed AutoRCM and want to fully power down your Switch, you must do s
 9. Select "Launch"
 10. Select "CFW"
     + Your console should boot
-11. While holding R, enter the Album
+11. Enter the Album
     +The Homebrew Launcher should launch
 12. Open ChoiDujourNX
 13. Select the folder with the firmware from earlier

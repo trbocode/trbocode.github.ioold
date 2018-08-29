@@ -37,9 +37,9 @@ If your device was bought before July 2018, running Homebrew is nearly 100% free
 
 **Custom Firmware** ("CFW") enables you to use more advanced hacks that userland homebrew can't easily do. It is currently in development, however a late beta version is used in this guide. For more details, see [FAQ: Fusée Gelée](http://www.ktemkin.com/faq-fusee-gelee/).
 
-Additionally, it is possible that devices on firmware version 1.0.0 may see an RCM-Jig less solution due to a software-only vulnerability which is not present on later firmware versions.
+Additionally, it is possible that devices on firmware version 1.0.0 may see an RCM less solution due to a software-only vulnerability which is not present on later firmware versions.
 
-If your device is on firmware version 1.0.0 and you are interested CFW access without an RCM jig, your best current option is to follow this guide and wait patiently for a CFW release.
+If your device is on firmware version 1.0.0 and you are interested CFW access without RCM, your best current option is to follow this guide and wait patiently for a CFW release.
 {: .notice--info}
 
 If your device was bought later than July 2018, it might still be vurnable. If you discover it isn't able to launch CFW, your best current option is to follow this guide's [Blocking Updates](blocking-updates) page and wait patiently for a CFW release.

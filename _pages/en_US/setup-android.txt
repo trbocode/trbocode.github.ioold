@@ -62,8 +62,8 @@ If you installed AutoRCM and want to fully power down your Switch, you must do s
 9. Select "Launch"
 10. Select "CFW"
     + Your console should boot
-11. While holding R, enter the Album
-    +The Homebrew Launcher should launch
+11. Enter the Album
+    + The Homebrew Launcher should launch
 12. Open ChoiDujourNX
 13. Select the folder with the firmware from earlier
 14. Select the EXFAT firmware
