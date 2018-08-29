@@ -1,0 +1,83 @@
+---
+title: "Setting up (Rekado)"
+---
+
+{% include toc title="Table of Contents" %}
+
+### What You need
+
+* The latest version of [SDFilesSwitch](https://github.com/tumGER/SDFilesSwitch/releases\latest)
+* The latest version of [Tinfoil](https://bsnx.lavatech.top/tinfoil/)
+* The latest version of [ChoiDujourNX](https://switchtools.sshnuke.net/)
+* The latest version of [Rekado](https://github.com/MenosGrante/Rekado/releases/latest)
+* The latest Switch firmware
+* A USB cable that connect your Switch to your Phone
+* Your method to enter RCM
+
+### Instructions
+
+#### Section I - Prep Work
+
+1. Power off your device
+1. Insert your SD card into your Computer\Phone
+2. Copy the contents of the "SDFilesSwitch" '.zip' to the root of your SD card
+4. Copy fusee-launcher.py to the new folder
+5. Copy the Hekate '.bin' from the "SDFilesSwitch" '.zip' file to your phone somewhere
+6. Copy the "ChoiDujourNX.nro" from its '.zip' to the "Switch" folder on your SD card
+7. Copy the "Tinfoil.nro" from its '.zip' to the "Switch" folder on your SD card
+8. Copy the latest Switch firmware to the root of your SD card
+6. Reinsert your SD card into your Switch
+8. Open Rekado
+9. Go to Payloads - The Download Icon
+10. Click on the Plus
+11. Select the '.bin' from before
+    + It should be added to the list of payloads after "sx_loader.bin"
+
+#### Section II - Entering RCM
+
+1. While holding the Volume Up button and while the two pins are connected using your method, boot up your Switch
+    + This may take Several attempts - if your Switch boots up normally, just try again
+1. If you entered RCM, your Switch screen should stay blank
+2. Connect your Switch to your Phone using the USB cable
+12. Open Rekado - It should promt you to select between SXloader and Hekate
+13. Select Hekate
+    + You must do this every time you boot up the Switch
+9. If the Exploit is successfull - You should see the "Hekate" screen
+    + If nothing happened or you got an error - Chanses are your Switch is patches and will not work for this guide
+    + You may choose to try again
+
+#### Section III - Configuring Hekate
+
+After installing AutoRCM, you will need to have a method to boot payloads in order to boot your Switch!
+{: .notice--danger}
+
+If you installed AutoRCM and want to fully power down your Switch, you must do so from the Hekate Menu.
+{: .notice--warning}
+
+1. Use the Power button and the Volume buttons to select and enter menus
+6. Select "Launch Options"
+7. Select "Autoboot"
+8. Select "CFW"
+9. Go back to the main menu
+9. Select "Launch"
+10. Select "CFW"
+    + Your console should boot
+11. While holding R, enter the Album
+    +The Homebrew Launcher should launch
+12. Open ChoiDujourNX
+13. Select the folder with the firmware from earlier
+14. Select the EXFAT firmware
+15. After it's done, turn off your Switch and put your SD card in your PC
+16. Backup every file that's on it, reformat it to exFAT, and copy the files back
+
+#### Section IV - NAND Backup
+
+This is an optimal very reccomended section to backup your Switch if things go wrong. The size of the backup should be 32GB
+{: .notice--info}
+1. While Holding Volume UP, In the folder you created before, drag the '.bin' file into the folder
+    + Hekate should load again
+2. Select "Tools"
+3. Select "Backup"
+4. Select "Dump Raw eMMC"
+5. Wait
+
